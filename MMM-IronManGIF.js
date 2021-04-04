@@ -23,23 +23,6 @@ Module.register("MMM-IronManGIF", {
       6: "./modules/MMM-IronManGIF/Resources/6.gif",
       7: "./modules/MMM-IronManGIF/Resources/7.gif",
       8: "./modules/MMM-IronManGIF/Resources/8.gif",                                    
-    },
-    
-    initializeStyle: function() {
-      try {
-        let styleCheck = null
-            styleCheck = parseInt(this.config.style)
-        if (typeof styleCheck !== "number" || (styleCheck <= 0 && styleCheck > 8)) {
-        console.error("config.style Corrected to 1")
-        this.config.style = 1
-        }
-      } 
-      catch (e) {
-      console.error("config.style error!", e)
-      this.config.style = 1
-      }
-      if this.initializeStyle()
-      this.url = this.GifUrls[this.config.style];
     }
   },      
   
@@ -61,6 +44,20 @@ Module.register("MMM-IronManGIF", {
       this.show(1000, {lockString: "IronLOCK"});
     }
 
-  }
+  },
+  initializeStyle: function() {
+    try {
+      let styleCheck = null
+          styleCheck = parseInt(this.config.style)
+      if (typeof styleCheck !== "number" || (styleCheck <= 0 && styleCheck > 8)) {
+      console.error("config.style Corrected to 1")
+      this.config.style = 1
+      }
+    } 
+      catch (e) {
+      console.error("config.style error!", e)
+      this.config.style = 1
+      }
+    }  
   
 });
