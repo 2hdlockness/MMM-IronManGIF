@@ -13,7 +13,6 @@ Module.register("MMM-IronManGIF", {
   },
 
   start: function() {
-    self = this;
     this.url = "";
     this.GifUrls = {
       1: "./modules/MMM-IronManGIF/Resources/1.gif",
@@ -24,10 +23,23 @@ Module.register("MMM-IronManGIF", {
       6: "./modules/MMM-IronManGIF/Resources/6.gif",
       7: "./modules/MMM-IronManGIF/Resources/7.gif",
       8: "./modules/MMM-IronManGIF/Resources/8.gif",                                    
-    }
+    },
     
-    if (this.config.style != "") {
-        this.url = this.GifUrls[this.config.style];
+    initializeStyle: function() {
+      try {
+        let styleCheck = null
+            styleCheck = parseInt(this.config.style)
+        if (typeof styleCheck !== "number" || (styleCheck <= 0 && styleCheck > 8)) {
+        console.error("config.style Corrected to 1")
+        this.config.style = 1
+        }
+      } 
+      catch (e) {
+      console.error("config.style error!", e)
+      this.config.style = 1
+      }
+      if this.initializeStyle()
+      this.url = this.GifUrls[this.config.style];
     }
   },      
   
@@ -44,9 +56,9 @@ Module.register("MMM-IronManGIF", {
 
   notificationReceived: function(notification, payload) {
     if (notification === 'HIDE_IronManGIF') {
-      this.hide(1000, {lockString: "LOCKEDMODULE"});
+      this.hide(1000, {lockString: "IronLOCK"});
     } else if (notification === 'SHOW_IronManGIF') {
-      this.show(1000, {lockString: "LOCKEDMODULE"});
+      this.show(1000, {lockString: "IronLOCK"});
     }
 
   }
