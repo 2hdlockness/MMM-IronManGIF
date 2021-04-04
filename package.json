@@ -1,0 +1,14 @@
+{
+  "name": "MMM-IronManGIF",
+  "version": "1.0.0",
+  "description": "Nice gifs on the theme of IronMan for your MagicMirror",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2hdlockness/MMM-IronManGIF"
+  },
+  "author": "@2hdlockness",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/2hdlockness/MMM-IronManGIF/issues"
+  },
+}
