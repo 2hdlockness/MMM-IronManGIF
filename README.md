@@ -31,8 +31,6 @@ git clone https://github.com/2hdlockness/MMM-IronManGIF
 
 ## Choose your config.js "style:" from this list.
 
-# Just the number!
-
 *  1<br>
 ![](https://github.com/2hdlockness/MMM-IronManGIF/blob/main/Resources/1.gif)
 *  2<br>
