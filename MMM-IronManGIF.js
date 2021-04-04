@@ -50,8 +50,8 @@ Module.register("MMM-IronManGIF", {
   initializeStyle: function() {
     try {
       let styleCheck = null
-          styleCheck = parseInt(this.config.style)
-      if (typeof styleCheck !== "number" || (styleCheck <= 0 && styleCheck > 8)) {
+      styleCheck = parseInt(this.config.style)
+      if (!Number.isInteger(styleCheck) || styleCheck <= 0 || styleCheck > 8) {
       console.error("config.style Corrected to 1")
       this.config.style = 1
       }
