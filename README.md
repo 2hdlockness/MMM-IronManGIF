@@ -24,7 +24,7 @@ git clone https://github.com/2hdlockness/MMM-IronManGIF
     position: "middle_center",
     config: {
         style: "1",            // Style number
-        maxWidth: "100%",       // Sizes the images. Retains aspect ratio.
+        maxWidth: "100%"       // Sizes the images. 
     }
 },
 ```
