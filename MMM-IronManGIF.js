@@ -31,10 +31,8 @@ Module.register("MMM-IronManGIF", {
   getDom: function() {
     var wrapper = document.createElement("div");
     var image = document.createElement("img");
-    if (this.config.style != "") {
-        image.src = this.url ;
-        image.style.maxWidth = this.config.maxWidth;
-    }
+    image.src = this.url ;
+    image.style.maxWidth = this.config.maxWidth;
     wrapper.appendChild(image);
     return wrapper;
   },
