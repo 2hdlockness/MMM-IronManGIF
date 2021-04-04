@@ -24,6 +24,8 @@ Module.register("MMM-IronManGIF", {
       7: "./modules/MMM-IronManGIF/Resources/7.gif",
       8: "./modules/MMM-IronManGIF/Resources/8.gif",                                    
     }
+    this.initializeStyle()
+    this.url = this.GifUrls[this.config.style];
   },      
   
   getDom: function() {
