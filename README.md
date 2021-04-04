@@ -50,3 +50,12 @@ git clone https://github.com/2hdlockness/MMM-IronManGIF
 *  8<br>
 ![](https://github.com/2hdlockness/MMM-IronManGIF/blob/main/Resources/8.gif)
 
+## Donate:
+If you love this theme !<br>
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=DQW6PLJLDDB8L)
+
+
+## Credits:
+- Author :
+  - @2hdlockness
+- License : MIT
