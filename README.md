@@ -51,7 +51,7 @@ git clone https://github.com/2hdlockness/MMM-IronManGIF
 ![](https://github.com/2hdlockness/MMM-IronManGIF/blob/main/Resources/8.gif)
 
 ## Donate:
-If you love this theme !<br>
+If you love this module !<br>
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=DQW6PLJLDDB8L)
 
 
