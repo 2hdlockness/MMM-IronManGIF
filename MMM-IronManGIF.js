@@ -12,7 +12,7 @@ Module.register("MMM-IronManGIF", {
   // Default module config.
   defaults: {
     style: 1,
-    rotate: true,
+    rotate: false,
     updateInterval: 300000, // 5 minutes
     maxWidth: "100%"
   },
