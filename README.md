@@ -24,7 +24,9 @@ git clone https://github.com/2hdlockness/MMM-IronManGIF
     position: "middle_center",
     config: {
         style: 1,              // Style number
-        maxWidth: "100%"       // Sizes the images. 
+        maxWidth: "100%",      // Sizes the images. 
+        rotate: false,         // Rotate through images
+        updateInterval: 30000  // Interval between image rotations (30 seconds)
     }
 },
 ```
@@ -54,6 +56,7 @@ If you love this module !<br>
 
 
 ## Credits:
-- Author :
+- Authors :
   - @2hdlockness
+  - @doctorfree
 - License : MIT
